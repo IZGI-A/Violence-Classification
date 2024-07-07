@@ -1,4 +1,4 @@
 ## Violence Classification
 
-Initially, the model which has a CNN-LSTM attention layer overfitted. We applied overfitting prevention methods such as regularization techniques, reducing model complexity, hyperparameter tuning. But we could not get appropriate result. 
+Initially, the model which has CNN-LSTM attention layers overfitted. We applied overfitting prevention methods such as regularization techniques, reducing model complexity, hyperparameter tuning. But we could not get appropriate result. 
 Then, we decided using pretrained model. Our data was passed through ResNet-101 to extract feature maps, which were then fed into an LSTM layer. The LSTM output was subsequently processed through a fully connected layer for classification. During training, we set the initial learning rate to 1e-5, used Adam as the optimizer, and applied Binary Cross-Entropy Loss as the loss function.
